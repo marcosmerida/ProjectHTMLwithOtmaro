@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+.item1 {grid-area: nav;}
+.item2 {grid-area: main;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'menu main ';
+    grid-gap: 300px;
+
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+  }
+
+header {
+    font-family: 'Londrina Solid', cursive;
+    border-bottom: 0.5px solid black;
+    color: black;
+    margin: 1px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: thin;
+
+  }
+
+#navbar {
+    overflow: scroll;
+    position: fixed;
+    min-width:auto;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+}
+#navbar div{
+    padding-bottom: 12.19px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    color: black;
+    text-align:center;
+    height: 200%;
+    padding-top: 16px;
+    transition: 0.2s;
+}
+#navbar div:hover{
+    background-color: #7D3C98;
+    font-size: 22px;
+}
+#navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Londrina Solid', cursive;
+    color: black;
+}
+
+.mainfo header{
+    background-color: #1F618D;
+    text-align: start;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+}
+.mainfo p{
+    font-family: 'Patrick Hand', cursive;
+    text-align: justify;
+    font-size: 25px;
+}
+.mainfo li{
+    font-family: 'Patrick Hand', cursive;
+    text-align: justify;
+    font-size: 25px;
+}

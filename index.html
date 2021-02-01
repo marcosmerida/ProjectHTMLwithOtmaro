@@ -1,10 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/js/Project3htmlwithOtmaro/style.css">
+    <link rel="stylesheet" href="style.css">
     <body>
-        <header>
-            <h1>Hola Mundo</h1>
-        </header>
+        <div class="grid-container">
+        <div class="item1" id="navbar">
+            <header>JS Documentation </header>
+            <section>
+                <a href="#introduction"><div> Introduction</div></a> 
+                <a href="#what_you_should_already_know"><div>What you should already know</div></a>
+                <a href="#Javascript_and_java"><div>JavaScript and Java</div></a>
+                <a href="#Hello_world"><div>Hello world</div></a>
+                <a href="#Variables"><div>Variables</div></a>
+                <a href="#Declaring_variables"><div>Declaring variables</div></a>
+                <a href="#Variable_scope"><div>Variable scope</div></a>
+                <a href="#Global_variables"><div>Global variables</div></a>
+                <a href="#Constants"><div>Constants</div></a>
+                <a href="#Data_types"><div>Data types</div></a>
+                <a href="#if_else_statement"><div>if...else statement</div></a>
+                <a href="#while_statement"><div>while statement</div></a>
+                <a href="#Function_declarations"><div>Function declarations</div></a>
+                <a href="#Reference"><div>Reference</div></a>
+            </section>
+        </div>
+           
+
+            <div class="mainfo item2">
+                <header id="introduction">Introduction</header>
+                <p>
+                    JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. 
+                    Inside a host environment (for example, a web browser),
+                    JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+                </p>
+                
+                <header id="what_you_should_already_know">what you should already know</header>
+                <p>
+                    <ul>
+                        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                        <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+                    </ul>
+                </p>
+
+                <header id="Javascript_and_java">JavaScript and Java</header>
+                <p>
+                    JavaScript and Java are similar in some ways but fundamentally different in some others.
+                     The JavaScript language resembles Java but does not have Java's static typing and strong type checking.
+                      JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+                </p>
+                
+                <header id="Hello_world">Hello world</header>
+                <p>
+                    To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:<br><br>
+                    function greetMe(yourName) { alert("Hello " + yourName); } <br>
+                    greetMe("World"); <br><br>
+                    Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+                </p>
+
+                <header id="Variables">Variables</header>
+                <p>
+                    You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+                </p>
+
+                <header id="Declaring_variables">Declaring variables</header>
+                <p>
+                    You can declare a variable in three ways:<br>
+                    With the keyword var. For example,<br><br>
+                    var x = 42.<br><br>
+                    This syntax can be used to declare both local and global variables.
+                </p>
+
+                <header id="Variable_scope">Variable scope</header>
+                <p>
+                    When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document.
+                     When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+                </p>
+
+                <header id="Global_variables">Global variables</header>
+                <p>
+                    Global variables are in fact properties of the global object. 
+                    In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+                </p>
+
+                <header id="Constants">Constants</header>
+                <p>
+                    You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier:
+                     it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+                </p>
+
+                <header id="Data_types">Data types</header>
+                <p>
+                    The latest ECMAScript standard defines seven data types:<br>
+                    <ul>
+                        <li>Six data types that are primitives:
+                            <ul>
+                                <li>Boolean. true and false.</li>
+                                <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                                <li>undefined. A top-level property whose value is undefined.</li>
+                                <li>Number. 42 or 3.14159.</li>
+                                <li>String. "Howdy"</li>
+                                <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                            </ul>
+                        </li>
+                        <li>and object.</li>
+                    </ul>
+                </p>
+
+                <header id="if_else_statement">if...else statement</header>
+                <p>
+                    Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false.
+                     An if statement looks as follows:<br><br>
+                     if (condition) { statement_1; } else { statement_2; } 
+                </p>
+
+                <header id="while_statement">while statement</header>
+                <p>
+                    A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:<br><br>
+                    while (condition) statement
+                </p>
+
+                <header id="Function_declarations">Function declarations</header>
+                <p>
+                    A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:<br>
+                    <ul>
+                        <li>The name of the function.</li>
+                        <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                        <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                    </ul>
+                    <p>For example, the following code defines a simple function named square:<br><br>
+                    function square(number) { return number * number; }</p>
+                </p>
+
+                <header id="Reference">Reference</header>
+                <p>
+                    All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>
+                </p>
+            </div>
+        </div>
+
+        
     </body>
 </html>
